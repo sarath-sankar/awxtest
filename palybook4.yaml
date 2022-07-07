@@ -1,8 +1,11 @@
----
-- hosts: all
-  tasks:
-    - name: Print pip list 
-      commond: pip list 
-      register: list 
-    - debug:
+--- 
+- 
+  hosts: all
+  tasks: 
+    - 
+      command: "pip list"
+      name: "Print pip list"
+      register: list
+    - 
+      debug: 
         msg: list
