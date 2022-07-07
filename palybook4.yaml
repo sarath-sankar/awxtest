@@ -1,0 +1,8 @@
+---
+- hosts: all
+  tasks:
+    - name: Print pip list 
+      commond: pip list 
+      register: list 
+    - debug:
+        msg: list
